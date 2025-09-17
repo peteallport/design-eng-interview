@@ -8,7 +8,7 @@ function RecentFeedback() {
       {MOCK_FEEDBACK_DATA.map((feedback) => (
         <div
           className="text-sm bg-gray-50 p-2 rounded-2xl overflow-clip"
-          key={feedback.id}
+          key={"recent-feedback-" + feedback.id}
         >
           <RatingBadge rating={feedback.rating} />
           <div className="text-base font-medium">{feedback.text}</div>

@@ -27,7 +27,7 @@ export function Message({ message }: { message: UIMessage }) {
           if (isToolCallPart(part)) {
             switch (part.type) {
               case "tool-get_recent_feedback":
-                return <RecentFeedback />;
+                return <RecentFeedback key={"recent-feedback"} />;
               default:
                 return <ToolCallDisplay key={index} part={part} />;
             }
