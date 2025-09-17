@@ -7,7 +7,7 @@ function RecentFeedback() {
     <div className="grid grid-cols-2 gap-2 border border-gray-200 rounded-3xl p-2">
       {MOCK_FEEDBACK_DATA.map((feedback) => (
         <div
-          className="text-sm bg-gray-50 p-2 rounded-2xl overflow-clip"
+          className="text-sm bg-gray-50x p-2 rounded-2xl overflow-clip"
           key={feedback.id}
         >
           <RatingBadge rating={feedback.rating} />
@@ -78,4 +78,4 @@ function TimestampBadge({ timestamp }: { timestamp: Date }) {
   );
 }
 
-export { RecentFeedback, SentimentBadge };
+export { RecentFeedback };

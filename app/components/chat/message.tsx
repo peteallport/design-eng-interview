@@ -5,7 +5,7 @@ import { ToolCallDisplay } from "~/components/chat/tool-call-display";
 import { Card } from "~/components/ui/card";
 import { cn } from "~/lib/tw";
 import { isToolCallPart } from "~/utils/types";
-import { RecentFeedback } from "./RecentFeedback";
+import { RecentFeedback } from "./ToolCall/RecentFeedback";
 
 export function Message({ message }: { message: UIMessage }) {
   return (
